@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiniStore - Ecommerce Web Site</title>
+    <link rel="shortcut icon" type="image/png" href="images/shippingcard.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="slick.css">
+</head>
+<body>
+    <!-- Navbar -->
+     <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+  <a class="navbar-brand" href="#">
+    <img src="images/main-logo.png">
+  </a>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading1">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2">Services</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading3">Products</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading4">Watches</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading5">Sale</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading6">Blog</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><img src="images/search-icon.png"></a>
+
+<div class="offcanvas offcanvas-top h-100" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">    
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <input type="search" class="form-control bg-body-tertiary rounded-pill w-75 mx-auto d-block fs-5 mt-5" placeholder="Type and press enter"> 
+    <p class="text-center mt-5" style="font-size: 12px;">BROWSE CATEGORIES</p>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-center align-items-center">
+        <li class="breadcrumb-item"><a href="#">Mobile Phones</a></li>
+        <li class="breadcrumb-item"><a href="#">Smart Watches</a></li>
+        <li class="breadcrumb-item"><a href="#">Headphones</a></li>
+      </ol>
+    </nav>
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb justify-content-center align-items-center">
+        <li class="breadcrumb-item"><a href="#">Accessories</a></li>
+        <li class="breadcrumb-item"><a href="#">Monitors</a></li>
+        <li class="breadcrumb-item"><a href="#">Speakers</a></li>
+        <li class="breadcrumb-item"><a href="#">Memory Cards</a></li>
+      </ol>
+    </nav>
+  </div>
+</div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-dark" href="#"><i class="fa-solid fa-user"></i></a>
+    </li>
+    <li class="nav-item">
+      <!-- Button trigger modal -->
+<a class="nav-link text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <i class="fa-solid fa-cart-shopping"></i><sup>0</sup>
+</a>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Cart Items</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+    </li>
+  </ul>
+</nav>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+  <div id="scrollspyHeading1">
+    <!-- carousel -->
+      <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-7">
+          <div class="mx-5 px-5">
+          <h1 class="display-1">TECHNOLOGY HACK YOU WON'T GET</h1>
+          <button type="button" class="btn btn-dark px-5 p-2 mt-4 text-center">SHOP PRODUCT</button>
+          </div>
+        </div>
+        <div class="col-5">
+          <img src="images/banner-image.png" class="img-fluid w-100 mx-auto d-block">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-7">
+          <div class="mx-5 px-5">
+          <h1 class="display-1">TECHNOLOGY HACK YOU WON'T GET</h1>
+          <button type="button" class="btn btn-dark px-5 p-2 mt-4 text-center">SHOP PRODUCT</button>
+          </div>
+        </div>
+        <div class="col-5">
+          <img src="images/banner-image.png" class="img-fluid w-100 mx-auto d-block">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  </div>
+  
+  <div id="scrollspyHeading2">
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <div class="d-flex">
+            <div class="p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart3"
+                viewBox="0 0 16 16" style="color: #72AEC8;">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+              </svg>
+            </div>
+            <div class="p-2">
+              <h4 class="fw-light">FREE DELIVERY</h4>
+              <p class="text-body-tertiary">Consectetur adipi elit lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="d-flex">
+            <div class="p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16" style="color: #72AEC8;">
+                <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+              </svg>
+            </div>
+            <div class="p-2">
+              <h4 class="fw-light text-uppercase">Quality guarantee</h4>
+              <p class="text-body-tertiary">Dolor sit amet orem ipsu mcons ectetur adipi elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex">
+            <div class="p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-tag" viewBox="0 0 16 16" style="color: #72AEC8;">
+  <path d="M6 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-1 0a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0"/>
+  <path d="M2 1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 1 6.586V2a1 1 0 0 1 1-1m0 5.586 7 7L13.586 9l-7-7H2z"/>
+</svg>
+            </div>
+            <div class="p-2">
+              <h4 class="fw-light text-uppercase">Daily offers</h4>
+              <p class="text-body-tertiary">Amet consectetur adipi elit loreme ipsum dolor sit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="d-flex">
+            <div class="p-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-shield-plus" viewBox="0 0 16 16" style="color: #72AEC8;">
+              <path d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"/>
+              <path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5"/>
+            </svg>
+            </div>
+            <div class="p-2">
+              <h4 class="fw-light text-uppercase">100% secure payment</h4>
+              <p class="text-body-tertiary">Rem Lopsum dolor sit amet, consectetur adipi elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="scrollspyHeading3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center my-5">
+        <h3>MOBILE PRODUCTS</h3>
+        <a href="#" class="text-dark">GO TO SHOP</a>
+      </div>
+        <div class="d-flex g-4 mob">
+          
+        </div>
+    </div>
+  </div>
+  
+  <div id="scrollspyHeading4">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center my-5">
+        <h3>SMART WATCHES</h3>
+        <a href="#" class="text-dark">GO TO SHOP</a>
+      </div>
+        <div class="d-flex g-4 watch">
+          
+        </div>
+    </div>
+  </div>
+  
+  <div id="scrollspyHeading5">
+    <div class="container-fluid">
+      <div class="row justify-content-center p-5 my-5 align-items-center">
+        <div class="col-4 ms-5 ps-5">
+          <h4>10% Off</h4>
+          <h1 class="display-3">NEW YEAR</h1>
+          <h1 class="display-3">SALE</h1>
+          <button type="button" class="btn btn-dark px-5 p-2 mt-4 text-center">SHOP SALE</button>
+        </div>
+        <div class="col-7">
+          <img src="images/single-image1.png" class="img-fluid w-100 mx-auto d-block">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="scrollspyHeading6">
+    <div class="container my-5">
+      <div class="d-flex justify-content-between align-items-center my-5">
+        <h3>LATEST POSTS</h3>
+        <a href="#" class="text-dark">READ BLOG</a>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100 border-0">
+      <img src="images/post-item1.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-body-tertiary">
+        <h6 class="text-secondary text-uppercase">feb 22, 2023 - Gadgets</h6>
+        <h5 class="card-title text-uppercase">Get some cool gadgets in 2023</h5>
+      </div>
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 border-0">
+      <img src="images/post-item2.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-body-tertiary">
+        <h6 class="text-secondary text-uppercase">feb 25, 2023 - Technology</h6>
+        <h5 class="card-title text-uppercase">Technology Hack You Won't Get</h5>
+      </div>
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 border-0">
+      <img src="images/post-item3.jpg" class="card-img-top" alt="...">
+      <div class="card-body bg-body-tertiary">
+        <h6 class="text-secondary text-uppercase">feb 22, 2023 - Camera</h6>
+        <h5 class="card-title text-uppercase">Top 10 Small Camera In The World</h5>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </div>
+    <!-- carousel -->
+     <div class="container">
+     <div id="carouselExample1" class="carousel slide text-center">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <i class="fa-solid fa-quote-right display-1 text-body-tertiary"></i>
+      <p class="display-6 p-4">“Tempus oncu enim pellen tesque este pretium in neque, elit morbi sagittis lorem habi mattis Pellen tesque pretium feugiat vel morbi suspen dise sagittis lorem habi tasse morbi.”</p>
+      <p style="color: #72AEC8;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></p>
+      <p>EMMA CHAMBERLIN</p>
+    </div>
+    <div class="carousel-item">
+      <i class="fa-solid fa-quote-right display-1 text-body-tertiary"></i>
+      <p class="display-6 p-4">“A blog is a digital publication that can complement a website or exist independently. A blog may include articles, short posts, listicles, infographics, videos, and other digital content.”</p>
+      <p style="color: #72AEC8;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i></p>
+      <p>JENNIE ROSE</p>
+    </div>    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<!-- Subscribe div -->
+<div class="container">
+  <div class="row bg-dark text-white p-5 align-items-center my-5">
+    <div class="col">
+      <h1 class="text-uppercase">Subscribe Us Now</h1>
+      <p class="text-secondary">Get latest news, updates and deals directly mailed to your inbox.</p>
+    </div>
+    <div class="col">
+      <div class="input-group mb-3 fs-5">
+        <input type="email" class="form-control py-3" placeholder="Your email address here" aria-label="Your email address here"
+          aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary text-uppercase btn1 py-3 px-4" type="button" id="button-addon2">Subscribe</button>
+      </div>
+    </div>
+  </div>
+ </div>
+ <!-- shop our insta -->
+  <div class="container my-5">
+    <h2 class="text-center text-uppercase my-4">Shop Our Insta</h2>
+    <div class="d-flex justify-content-evenly align-items-center">
+      <div class="p-2">
+        <img src="images/insta-item1.jpg" height="320" width="250" class="position-relative">        
+        <i class="fa-brands fa-instagram fs-1 position-absolute insta"></i>
+      </div>
+      <div class="p-2">
+        <img src="images/insta-item2.jpg" height="320" width="250" class="position-relative">
+        <i class="fa-brands fa-instagram fs-1 position-absolute insta"></i>
+      </div>
+      <div class="p-2">
+        <img src="images/insta-item3.jpg" height="320" width="250" class="position-relative">
+        <i class="fa-brands fa-instagram fs-1 position-absolute insta"></i>
+      </div>
+      <div class="p-2">
+        <img src="images/insta-item4.jpg" height="320" width="250" class="position-relative">
+        <i class="fa-brands fa-instagram fs-1 position-absolute insta"></i>
+      </div>
+      <div class="p-2">
+        <img src="images/insta-item5.jpg" height="320" width="250" class="position-relative">
+        <i class="fa-brands fa-instagram fs-1 position-absolute insta"></i>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+   <div class="container">
+    <div class="row my-5">
+      <div class="col">
+        <img src="images/main-logo.png">
+        <p class="text-body-tertiary fs-5">Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.</p>
+        <p class="d-flex justify-content-evenly fs-5"><a href="#" class="text-body-tertiary"><i class="fa-brands fa-facebook-f"></i></a><a href="#" class="text-body-tertiary"><i class="fa-brands fa-instagram"></i></a><a href="#" class="text-body-tertiary"><i class="fa-brands fa-twitter"></i></a><a href="#" class="text-body-tertiary"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" class="text-body-tertiary"><i class="fa-brands fa-youtube"></i></a></p>
+      </div>
+      <div class="col">
+        <h4>QUICK LINKS</h4>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">HOME</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">ABOUT</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">SHOP</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">BLOGS</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">CONTACT</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>HELP & INFO HELP</h4>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">TRACK YOUR ORDER</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">RETURN POLICIES</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">SHIPPING+DELIVERY</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">CONTACT US</a></li>
+          <li class="mb-2"><a href="#" class="text-dark text-decoration-none">FAQS</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>CONTACT US</h4>
+        <p class="text-body-tertiary">Do you have any queries or suggestions?</p>
+        <a href="#" class="text-dark text-decoration-none">yourinfo@gmail.com</a>
+        <p class="text-body-tertiary mt-3">If you need support? Just give us a call.</p>
+        <a href="#" class="text-dark text-decoration-none">+55 111 222 333 44</a>
+      </div>
+    </div>
+   </div>
+   <div class="row border-top p-3 fs-5">
+    <div class="col">
+      <p class="text-body-tertiary">We ship with: <img src="images/dhl.png"> <img src="images/shippingcard.png"></p>
+    </div>
+    <div class="col">
+      <p>Payment Options: <img src="images/visa.jpg"> <img src="images/mastercard.jpg"> <img src="images/paypal.jpg"></p>
+    </div>
+    <div class="col">
+      <p>&copy; Copyright 2023 MiniStore. Design by <span class="text-dark">Shweta Suryawanshi</span> Distribution by <span class="text-dark">Shweta Suryawanshi</span></p>
+    </div>
+   </div>
+  </div>
+  
+  </div>
+  
+</div>
+<script src="slick.js"></script>
+<script src="slick.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.mob').slick({
+      infinite: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots:true
+    });
+  })
+  $(document).ready(function () {
+    $('.watch').slick({
+      infinite: false,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots:true
+    });
+  })
+</script>
+</body>
+</html>
+<script src="cart.js"></script>
